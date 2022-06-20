@@ -8,6 +8,7 @@ import ReferanslarPage from '../pages/ReferanslarPage'
 import ProjelerPage from '../pages/ProjelerPage'
 import TeklifPage from '../pages/TeklifPage'
 import GaleriPage from '../pages/GaleriPage'
+import HizmetlerimizPage from '../pages/HizmetlerimizPage'
 
 
 const CustomRoutes = () => {
@@ -16,8 +17,9 @@ const CustomRoutes = () => {
        
         <Route path='/contact' element={<ContactPage/>}/>     
         <Route path='/galeri' element={<GaleriPage/>}/>     
-        <Route path='/projelerimiz' element={<ProjelerPage/>}/>   
-        <Route path='/referanslar' element={<ReferanslarPage/>}/>   
+        <Route path='/projeler' element={<ProjelerPage/>}/>   
+        <Route path='/referanslar' element={<ReferanslarPage/>}/>  
+        <Route path='/hizmetler' element={<HizmetlerimizPage/>}/> 
         <Route path='/about' element={<AboutPage/>}/>   
         <Route path='/teklif' element={<TeklifPage/>}/>        
         <Route path='/' element={<HomePage/>}/>

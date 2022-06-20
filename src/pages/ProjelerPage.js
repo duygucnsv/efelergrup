@@ -1,7 +1,7 @@
 import React from 'react'
 import PageHeader from '../components/common/PageHeader'
 import Spacer from '../components/common/Spacer'
-import CustomerServices from '../components/services/CustomerServices'
+import Projeler from '../components/projeler/Projeler'
 import Vehicles from '../components/services/Vehicles'
 
 const ProjelerPage = () => {
@@ -9,10 +9,12 @@ const ProjelerPage = () => {
      <>
       <PageHeader title="Projelerimiz"/>
       <Spacer/>
+      <Projeler/>
+      <Spacer/>
       <Vehicles/>
       <Spacer/>
-      <CustomerServices/>
-      <Spacer/>
+      
+      
     </>
   )
 }

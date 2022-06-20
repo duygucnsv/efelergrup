@@ -1,38 +1,41 @@
 import React from 'react'
-import {Card, Col, Container, Row} from "react-bootstrap"
+import {Col, Container, Row, Figure} from "react-bootstrap"
 
-const projeler = () => {
+const Projeler = () => {
   return (
     <Container className="galeri">
       <Row>
         <Col lg={4}>
-          <Card className='d-flex h-100 w-100'>
-            <Row>              
-              <Col xs={5} >
-            <Card.Img src="assets/img/resimler/soğan sökme mak2.jpg" />
-              </Col>
-            </Row>
-          </Card>
+         <Figure>         
+       <Figure.Image
+          width={350}
+          height={350}
+          alt="171x180"
+          src="assets/img/resimler/soğan sökme mak2.jpeg"
+        />  
+        </Figure>
         </Col>
 
         <Col lg={4}>
-        <Card>
-            <Row>              
-              <Col xs={5}>
-                 <Card.Img className="img-fluid rounded-start" src="assets/img/resimler/2.jpg" />
-              </Col>
-            </Row>
-          </Card>
+        <Figure>         
+       <Figure.Image
+          width={400}
+          height={100}
+          alt="171x180"
+          src="assets/img/resimler/2.jpg"
+        />  
+        </Figure>
         </Col>
 
         <Col lg={4}>
-        <Card>
-            <Row>              
-              <Col xs={5}>
-                  <Card.Img className="img-fluid rounded-start" src="assets/img/resimler/3.jpg" />
-              </Col>
-            </Row>
-          </Card>
+       <Figure>          
+       <Figure.Image
+          width={171}
+          height={180}
+          alt="171x180"
+          src="assets/img/resimler/1.jpg"
+        />  
+        </Figure>
         </Col>         
            
         
@@ -42,4 +45,4 @@ const projeler = () => {
   )
 }
 
-export default projeler
+export default Projeler

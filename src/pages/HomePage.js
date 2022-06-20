@@ -14,8 +14,7 @@ const HomePage = () => {
       <SliderCarousel />
       <Spacer/>
       <BannerContact/>
-            <Spacer/>
-
+      <Spacer/>
       <CustomerServices/>
       <Spacer/>
       <NewsletterPanel/>

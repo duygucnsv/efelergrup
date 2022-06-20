@@ -57,7 +57,6 @@ const BannerContact = () => {
                     <BannerContactItem
                   img="assets/img/map.png"
                   link="/contact" 
-
                   icerik="Osmangazi Mh.Mareşal Fevzi Çakmak Cd. No:33/1 Esenyurt/İSTANBUL"
                 />
                   </Card.Text>

@@ -23,7 +23,7 @@ const Contact = () => {
                       <RiWhatsappLine /> <em>+90 532 695 54 52</em>
                     </p>
                     <p>
-                      <RiMailSendLine /> <em>efedemircelik@gmail.com</em>
+                      <RiMailSendLine /> <a href="mailto:efedemircelik@gmail.com"><em>efedemircelik@gmail.com</em> </a>
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -47,7 +47,8 @@ const Contact = () => {
                       <RiWhatsappLine /> <em>+90 532 723 83 27</em>
                     </p>
                     <p>
-                      <RiMailSendLine /> <em>efelergrubdemircelik@gmail.com</em>
+                      <RiMailSendLine /> <a href="mailto:efelergrubdemircelik@gmail.com"><em>efelergrubdemircelik@gmail.com</em> 
+                      </a>
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -71,7 +72,8 @@ const Contact = () => {
                       <RiWhatsappLine /> <em>+90 553 160 62 74</em>
                     </p>
                     <p>
-                      <RiMailSendLine /> <em>efelergrubdemircelik@gmail.com</em>
+                      <RiMailSendLine /> <a href="mailto:efelergrubdemircelik@gmail.com"><em>efelergrubdemircelik@gmail.com</em> 
+                      </a>
                     </p>
                   </Card.Text>
                 </Card.Body>
