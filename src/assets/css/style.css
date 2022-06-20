@@ -1,0 +1,405 @@
+/************ GENRAL SETTINGS ************/
+
+:root {
+  --color1: #004ce5;
+  --color2: #4a80ee;
+  --color3: #003297;
+  --color4: #cecece;
+  --color5: #363636;
+  --color1-transparent-15: rgba(0, 76, 229, 0.15);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  /* background-color: #cecece; */
+  background-color: #f0f1f2;;
+}
+
+.btn-primary {
+  background-color: var(--color1);
+  border-color: var(--color1);
+}
+
+.btn-primary:hover { /*hover üstüne gelince demek*/
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+
+.spinner-loading {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-loading .spinner-border {
+  width: 15rem !important;
+  height: 15rem !important;
+}
+
+.spinner-loading .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-hand {
+  cursor: pointer;
+}
+
+.search-place {
+  position: relative;
+}
+
+.search-place ul {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid var(--color2);
+  border-radius: 0.3rem;
+  z-index: 5;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.search-place ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color1-transparent-15);
+  cursor: pointer;
+}
+
+.search-place ul li:hover {
+  background-color: var(--color1-transparent-15);
+}
+
+.search-place ul li:last-child {
+  border-bottom: none;
+}
+
+/************ SECTION TITLE ************/
+.section-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-title h2 {
+  font-weight: 900;
+  color: var(--color5);
+}
+
+.section-title span {
+  display: inline-block;
+  width: 5rem;
+  height: 0.5rem;
+  background-color: var(--color2);
+}
+
+/************ TOPBAR ************/
+.topbar {
+  background-color: var(--color4);
+  padding: 0.5rem;
+}
+
+.topbar ul {
+  list-style-type: none;  /*İCONLARIN YANINDAKİ NOKTADAN KURTULMAK İÇİN BUNU KULLANIYORUZ*/
+  display: flex; /*altalta olan iconları yanyana yazabilmek için kullanılır*/
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; 
+
+}
+
+.topbar ul li {
+  padding-left: 1rem;
+}
+
+.topbar .row{
+  justify-content: center;
+  align-items: center;
+}
+
+/************ MENUBAR ************/
+.menubar{
+  height: 150px;
+    align-items: center;
+}
+
+.menubar .logo{
+  width: 370px;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.menubar .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 450px) { /*media sorgusu ile hangi ekranda nasıl gözükeceğini ayarlıyoruz*/
+  
+  .menubar .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+.menubar .navbar-nav a.active {
+  border-bottom: 0.3rem solid var(--color2);
+}
+
+.menubar .navbar-nav a:hover {
+  color: var(--color2) !important; /*bootstraptan gelen hover ı ezmek için important ekledik*/
+}
+
+/************ SLIDER ************/
+.slider {
+  background-color: var(--color1-transparent-15);
+  background-image: -moz-linear-gradient()
+}
+
+.slider .carousel-caption {
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.slider .carousel-control-next,
+.slider .carousel-control-prev {
+  top: auto;
+  bottom: 15px;
+  width: auto;
+}
+
+.slider .carousel-control-prev {
+  right: 50px;
+  left: auto;
+}
+
+
+.slider .row {
+  align-items: center;
+}
+
+.carousel-item {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
+/************ CUSTOMER SERVICE CARD ************/
+
+.customer-service-card .icon {
+  color: var(--color2);
+  font-size: 4rem;
+}
+
+.customer-service-card .row {
+  align-items: center;
+  text-align: center;
+}
+
+/************ PROJELER ************/
+.vehicleList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vehicleList li {
+  background-color: var(--color4);
+  padding: 0.7rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.vehicleList li.active {
+  background-color: var(--color1-transparent-15);
+  position: relative;
+}
+
+.vehicleList li.active::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid var(--color1-transparent-15);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vehicleList li:first-child,
+.vehicleList li:last-child {
+  padding: 0;
+}
+
+.vehicleList li button {
+  width: 100%;
+}
+
+.vehicleList li button:disabled {
+  cursor: default;
+}
+
+.vehiclesDropDown .dropdown-menu {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+
+/************ NEWSLETTER ************/
+.newsletter {
+  background-color: var(--color4);
+  padding: 4rem;
+}
+
+.newsletter .row {
+  justify-content: center;
+  align-items: center;
+}
+
+/************ PAGE HEADER ************/
+
+.page-header {
+  padding: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/efeler-slider.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color1-transparent-15);
+  z-index: 2;
+}
+
+.page-header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.page-header .breadcrumb a {
+  text-decoration: none;
+}
+
+/************ ADMIN ************/
+
+.image-area {
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-area button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.image-area-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/************ FOOTER ************/
+footer {
+  background-color: var(--color1);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer ul li a {
+  color: var(--color4);
+  text-decoration: none;
+  margin-left: 2rem;
+  border-bottom: 3px solid var(--color2);
+}
+
+footer ul li a:hover {
+  color: var(--color5);
+  border-bottom: 3px solid var(--color5);
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+/************ ALERTIFY ************/
+
+.alertify .ajs-header {
+  background-color: var(--color2);
+  font-weight: 600;
+}
+
+.alertify .ajs-commands button.ajs-close {
+  background-color: white;
+}
+
+/******* GALERİ **********/
+
+.galeri .img{
+  float: left;
+}
