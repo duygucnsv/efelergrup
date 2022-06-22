@@ -134,8 +134,9 @@ body {
 
 /************ MENUBAR ************/
 .menubar{
-  height: 150px;
+    height: 150px;
     align-items: center;
+    justify-content: center;
 }
 
 .menubar .logo{

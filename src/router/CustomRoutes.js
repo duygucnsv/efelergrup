@@ -19,7 +19,7 @@ const CustomRoutes = () => {
         <Route path='/galeri' element={<GaleriPage/>}/>     
         <Route path='/projeler' element={<ProjelerPage/>}/>   
         <Route path='/referanslar' element={<ReferanslarPage/>}/>  
-        <Route path='/hizmetler' element={<HizmetlerimizPage/>}/> 
+        <Route path='/hizmetlerimiz' element={<HizmetlerimizPage/>}/> 
         <Route path='/about' element={<AboutPage/>}/>   
         <Route path='/teklif' element={<TeklifPage/>}/>        
         <Route path='/' element={<HomePage/>}/>

@@ -20,10 +20,10 @@ const TopBar = () => {
   return (
     <div className="topbar">
       <Container>
-        <Row>
-          
+        <Row>          
           <Col xs={7}>
-            <FiPhoneCall size={16} /> <span className="d-none d-md-inline"> BİZİ ARAYIN <p>+90 530 524 95 19</p> </span>
+            <FiPhoneCall size={16} /> <span className="d-none d-md-inline"> BİZİ ARAYIN <br></br> 
+            <a href="+90 530 524 95 19"  link="tel:(+90)5305249519">+90 530 524 95 19</a> </span>
             
           </Col> 
 
@@ -42,7 +42,7 @@ const TopBar = () => {
                 <FiInstagram />
               </li>
                <li>
-                <Button as={Link} size="sm" to="/teklif">
+                <Button size="sm">
                   <MdOutlineLocalOffer/>TEKLİF ALIN
                   </Button>
               </li>
