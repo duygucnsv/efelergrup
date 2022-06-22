@@ -8,8 +8,7 @@ const Projeler = () => {
         <Col lg={4}>
          <Figure>         
        <Figure.Image
-          width={350}
-          height={350}
+          
           alt="171x180"
           src="assets/img/resimler/soğan sökme mak2.jpeg"
         />  
@@ -19,9 +18,7 @@ const Projeler = () => {
         <Col lg={4}>
         <Figure>         
        <Figure.Image
-          width={400}
-          height={100}
-          alt="171x180"
+        
           src="assets/img/resimler/2.jpg"
         />  
         </Figure>
@@ -30,9 +27,8 @@ const Projeler = () => {
         <Col lg={4}>
        <Figure>          
        <Figure.Image
-          width={171}
-          height={180}
-          alt="171x180"
+          
+          
           src="assets/img/resimler/1.jpg"
         />  
         </Figure>

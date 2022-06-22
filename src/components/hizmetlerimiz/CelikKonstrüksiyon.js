@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col,Row,Container } from 'react-bootstrap'
+import SectionTitle from '../common/SectionTitle'
 import HizmetlerItem from './HizmetlerItem'
 
 const CelikKonstrüksiyon = () => {
@@ -7,6 +8,10 @@ const CelikKonstrüksiyon = () => {
     <Container>      
         <Row>
           <Col> 
+          <SectionTitle title="Hizmet Alanlarımız"          />
+          <p>    Efeler Grup uzman kadrosu ile kaliteli, sorunsuz, hassas ve hızlı üretim anlayışı çerçevesinde hizmet vermeye devam etmektedir.</p>
+          <br></br>
+
             <HizmetlerItem
             başlık= "ÇELİK KONSTRÜKSİYON NEDİR"
             açıklama= "  Tüm taşıyıcı sistemlerin çelikten üretildiği, özellikle deprem tehdidi taşıyan coğrafi bölgelerde tercih edilen, çoğunlukla çelik konstrüksiyon fabrika binaları, çelik konstrüksiyon hangar, çelik konstrüksiyon spor tesisleri, çelik konstrüksiyon depo ve çelik konstrüksiyon atölyelerde kullanılan, geniş açıklıklara ve yüksekliğe sahip çelik yapı sistemidir."
