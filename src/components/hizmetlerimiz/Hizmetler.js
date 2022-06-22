@@ -9,7 +9,6 @@ const Hizmetler = () => {
   <Breadcrumb.Item href="/hizmetler">
     Hizmetlerimiz
   </Breadcrumb.Item>
-  <Breadcrumb.Item active>Data</Breadcrumb.Item>
 </Breadcrumb>
     </Container>
   )

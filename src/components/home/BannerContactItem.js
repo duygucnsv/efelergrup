@@ -1,9 +1,12 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
 const BannerContactItem = (props) => {
   return (
-    <div >
-      <div >
+    <Container >
+      <Row>
+        <Col>
+          <div >
         <img src={props.img} alt="support" />
       </div>
       <div>
@@ -12,7 +15,10 @@ const BannerContactItem = (props) => {
         </h5>
        
       </div>
-    </div>
+        </Col>
+      </Row>
+    
+    </Container>
   );
 };
 

@@ -3,6 +3,8 @@ import PageHeader from '../components/common/PageHeader'
 import Spacer from '../components/common/Spacer'
 import Projeler from '../components/projeler/Projeler'
 import Vehicles from '../components/services/Vehicles'
+import NewsletterPanel from '../components/contact/NewsletterPanel'
+
 
 const ProjelerPage = () => {
   return (
@@ -13,6 +15,9 @@ const ProjelerPage = () => {
       <Spacer/>
       <Vehicles/>
       <Spacer/>
+      <NewsletterPanel/>
+      <Spacer/>
+
       
       
     </>
