@@ -4,6 +4,7 @@ import Spacer from '../components/common/Spacer'
 import Projeler from '../components/projeler/Projeler'
 import Vehicles from '../components/services/Vehicles'
 import NewsletterPanel from '../components/contact/NewsletterPanel'
+import Project from '../components/projeler/Project'
 
 
 const ProjelerPage = () => {
@@ -11,7 +12,7 @@ const ProjelerPage = () => {
      <>
       <PageHeader title="Projelerimiz"/>
       <Spacer/>
-      <Projeler/>
+      <Project/>
       <Spacer/>
       <Vehicles/>
       <Spacer/>

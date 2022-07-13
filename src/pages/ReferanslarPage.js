@@ -1,5 +1,5 @@
 import React from 'react'
-import Referanslar from '../components/referanslar/Referanslar'
+import Referanslarİki from '../components/referanslar/Referanslarİki'
 import PageHeader from '../components/common/PageHeader'
 import Spacer from '../components/common/Spacer'
 
@@ -8,7 +8,7 @@ const ReferanslarPage = () => {
     <>
     <PageHeader title="Referanslarımız"/>
     <Spacer/>
-    <Referanslar/>
+    <Referanslarİki/>
     <Spacer/>
    
     </>

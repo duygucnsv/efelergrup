@@ -8,8 +8,7 @@ const HizmetlerimizPage = () => {
   return (
     <>
     <PageHeader title="Hizmetlerimiz"/>
-    <Spacer/>
-    <Hizmetler/>
+    {/* <Hizmetler/> */}
     <Spacer/>
     <CelikKonstrüksiyon/>
     <Spacer/>

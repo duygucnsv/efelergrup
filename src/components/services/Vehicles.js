@@ -89,7 +89,7 @@ const Vehicles = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={5}>
+          <Col lg={5} className="vehicles">
             <Image
               src={`/assets/img/resimler/${vehicles[activeVehicle].image}`}
               className="img-fluid"

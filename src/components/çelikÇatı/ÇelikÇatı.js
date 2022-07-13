@@ -1,9 +1,8 @@
 import React from 'react'
-import {Col, Container, Row, Card,Button
-} from "react-bootstrap"
-import { projectList } from '../data/projectList';
 
-const Projeler = () => {
+
+
+const ÇelikÇatı = () => {
   return (
     <Container className="projeler">
       <div className="row-wrapper">
@@ -31,4 +30,4 @@ const Projeler = () => {
   );
 }
 
-export default Projeler
+export default ÇelikÇatı

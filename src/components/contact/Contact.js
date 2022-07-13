@@ -7,23 +7,29 @@ const Contact = () => {
   return (
     <Container>
       <Row>
-        <Col lg={4}>
+        <Col xs={12} md={4} lg={6}>
           <Card>
             <Row>
-              
-              <Col >
+              <Col>
                 <Card.Body>
                   <Card.Title>Demir-Çelik Sorumlusu</Card.Title>
                   <Card.Title>Mehmet Çetin</Card.Title>
                   <Card.Text>
                     <p>
-                      <RiHeadphoneLine /> <em>+90 532 695 54 52</em>
+                      <RiHeadphoneLine />
+                      <a href="tel:0532695452">+90 532 695 54 52</a>
                     </p>
                     <p>
-                      <RiWhatsappLine /> <em>+90 532 695 54 52</em>
+                      <RiWhatsappLine />
+                      <a href="https://wa.me/90532695452" target="_blank">
+                        +90 532 695 54 52
+                      </a>
                     </p>
                     <p>
-                      <RiMailSendLine /> <a href="mailto:efedemircelik@gmail.com"><em>efedemircelik@gmail.com</em> </a>
+                      <RiMailSendLine />{" "}
+                      <a href="mailto:efedemircelik@gmail.com">
+                        <em>efedemircelik@gmail.com</em>{" "}
+                      </a>
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -31,23 +37,28 @@ const Contact = () => {
             </Row>
           </Card>
         </Col>
-        <Col lg={4}>
-        <Card>
+        <Col xs={12} md={4} lg={6}>
+          <Card>
             <Row>
-              
               <Col>
                 <Card.Body>
                   <Card.Title>Makina Sorumlusu</Card.Title>
                   <Card.Title>Nuri Bilgi</Card.Title>
                   <Card.Text>
                     <p>
-                      <RiHeadphoneLine /> <em>+90 532 723 83 27</em>
+                      <RiHeadphoneLine />
+                      <a href="tel:05327238327">+90 532 723 83 27</a>
                     </p>
                     <p>
-                      <RiWhatsappLine /> <em>+90 532 723 83 27</em>
+                      <RiWhatsappLine />
+                      <a href="https://wa.me/05327238327" target="_blank">
+                        +90 532 723 83 27
+                      </a>
                     </p>
                     <p>
-                      <RiMailSendLine /> <a href="mailto:efelergrubdemircelik@gmail.com"><em>efelergrubdemircelik@gmail.com</em> 
+                      <RiMailSendLine />
+                      <a href="mailto:efelergrubdemircelik@gmail.com">
+                        <em>efelergrubdemircelik@gmail.com</em>
                       </a>
                     </p>
                   </Card.Text>
@@ -56,31 +67,7 @@ const Contact = () => {
             </Row>
           </Card>
         </Col>
-        <Col lg={4}>
-        <Card>
-            <Row>
-              
-              <Col>
-                <Card.Body>
-                  <Card.Title>İmalat Müdürü</Card.Title>
-                  <Card.Title>Yasin Bilgi</Card.Title>
-                  <Card.Text>
-                    <p>
-                      <RiHeadphoneLine /> <em>+90 553 160 62 74</em>
-                    </p>
-                    <p>
-                      <RiWhatsappLine /> <em>+90 553 160 62 74</em>
-                    </p>
-                    <p>
-                      <RiMailSendLine /> <a href="mailto:efelergrubdemircelik@gmail.com"><em>efelergrubdemircelik@gmail.com</em> 
-                      </a>
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Col>
-            </Row>
-          </Card>
-        </Col>
+      
       </Row>
     </Container>
   );

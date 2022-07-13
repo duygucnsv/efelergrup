@@ -8,7 +8,7 @@ const CelikKonstrüksiyon = () => {
     <Container>      
         <Row>
           <Col> 
-          <SectionTitle title="Hizmet Alanlarımız"          />
+          <SectionTitle title="Hizmet Alanlarımız"/>
           <p>    Efeler Grup uzman kadrosu ile kaliteli, sorunsuz, hassas ve hızlı üretim anlayışı çerçevesinde hizmet vermeye devam etmektedir.</p>
           <br></br>
 
