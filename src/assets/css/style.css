@@ -297,7 +297,13 @@ img-fluid rounded-start{
   opacity: 1;
 }
 
+/************ GALERİ ************/
 
+.resimler card.img{
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+}
 
 
 /************ CUSTOMER SERVICE CARD ************/
@@ -497,4 +503,9 @@ footer ul li:first-child {
 
 .galeri .img{
   float: left;
+}
+
+/********REFERANS*****/
+.referanslar {
+  background-color: rgb(158, 153, 153);
 }

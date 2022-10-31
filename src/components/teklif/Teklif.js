@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Form,
-  Button
-} from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import MaskInput from "react-maskinput/lib";
-
+import { toast } from "react-toastify";
 
 const Teklif = () => {
   
@@ -21,21 +14,33 @@ const Teklif = () => {
     email: "",
     telefon: "",
     konu: "",
-    
   };
 
   const validationSchema = Yup.object({
     firmaAdı: Yup.string().required("Lütfen firma adı giriniz."),
     yetkiliKişi: Yup.string().required("Lütfen yetkili kişi giriniz."),
     email: Yup.string().email().required("Lütfen email adresinizi giriniz."),
-    telefon: Yup.string().required("Lütfen telefon numaranızı giriniz.")
-    .test("includes_","Please enter a valid phone number", (value)=> value && !value.includes("_") ),
-    konu: Yup.string().required("Lütfen iletişime geçmek istediğiniz konuyu giriniz."),
-   
+    telefon: Yup.string()
+      .required("Lütfen telefon numaranızı giriniz.")
+      .test(
+        "includes_",
+        "Please enter a valid phone number",
+        (value) => value && !value.includes("_")
+      ),
+    konu: Yup.string().required(
+      "Lütfen iletişime geçmek istediğiniz konuyu giriniz."
+    ),
   });
 
   const onSubmit = (values) => {
     console.log(values);
+    
+    toast("Teklifiniz gönderildi.");
+    // .catch(err => {
+      
+    //   setLoading(false);
+    //   toast("Teklifiniz gönderilemedi.Bilgilerinizi kontrol ediniz.")
+    // });
   };
 
   const formik = useFormik({
@@ -89,7 +94,7 @@ const Teklif = () => {
                   <Form.Control.Feedback type="invalid">
                     {formik.errors.telefon}
                   </Form.Control.Feedback>
-                </Form.Group>             
+                </Form.Group>
 
                 <hr />
 
@@ -116,8 +121,6 @@ const Teklif = () => {
                     {formik.errors.konu}
                   </Form.Control.Feedback>
                 </Form.Group>
-
-              
 
                 <Button variant="primary" type="submit">
                   GÖNDER

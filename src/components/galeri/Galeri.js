@@ -5,7 +5,7 @@ import { Row, Container, Col, Card } from "react-bootstrap";
 const Galeri = () => {
   return (
     <Container className="resimler">
-      <div className="row-wrapper">
+      <div className="container-fluid p-0 m-5">
         <Row>
           {galeriList.map((product) => (
             <Col xs={12} md={4} lg={3} key={product.id}>
@@ -20,8 +20,8 @@ const Galeri = () => {
                   >
                     <Card.Img
                       style={{
-                        maxWidth: "18rem",
-                        maxHeight: "18rem",
+                        width: "18rem",
+                        height: "18rem",
                         textAlign: "center",
                         objectFit: "cover",
                       }}

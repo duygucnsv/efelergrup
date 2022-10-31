@@ -3,21 +3,26 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const BannerContactItem = (props) => {
   return (
-    <Container >
+    <Container>
       <Row>
-        <Col>
-          <div >
-        <img src={props.img} alt="support" />
-      </div>
-      <div>
-        <h5>
-          <a href={props.link}>{props.icerik}</a>
-        </h5>
-       
-      </div>
+        <Col
+          style={{
+            width: "8rem",
+            height: "8rem",
+            textAlign: "center",
+            objectFit: "cover",
+          }}
+        >
+          <div>
+            <img src={props.img} alt="support" /> <br />
+          </div>
+          <div>
+            <h5>
+              <a href={props.link}>{props.icerik}</a>
+            </h5>
+          </div>
         </Col>
       </Row>
-    
     </Container>
   );
 };

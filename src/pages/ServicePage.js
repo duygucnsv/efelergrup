@@ -1,20 +1,20 @@
-import React from 'react'
-import PageHeader from '../components/common/PageHeader'
-import Spacer from '../components/common/Spacer'
-import CustomerServices from '../components/services/CustomerServices'
-import Vehicles from '../components/services/Vehicles'
+import React from "react";
+import PageHeader from "../components/common/PageHeader";
+import Spacer from "../components/common/Spacer";
+import CustomerServices from "../components/services/CustomerServices";
+import Vehicles from "../components/services/Vehicles";
 
 const ServicePage = () => {
   return (
     <>
-      <PageHeader title="Services"/>
-      <Spacer/>
+      <PageHeader title="Services" />
+      <Spacer />
       <Vehicles />
-      <Spacer/>
-      <CustomerServices/>
-      <Spacer/>
+      <Spacer />
+      <CustomerServices />
+      <Spacer />
     </>
-  )
-}
+  );
+};
 
-export default ServicePage
+export default ServicePage;

@@ -7,6 +7,7 @@ import Spacer from "../components/common/Spacer";
 import SliderCarousel from "../components/home/SliderCarousel";
 import BannerContact from "../components/home/BannerContact";
 import Project from "../components/projeler/Project";
+import Partners from "../components/referanslar/Partners";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,8 @@ const HomePage = () => {
       <NewsletterPanel />
       <Spacer />
       <Vehicles />
+      <Spacer />
+      <Partners />
       <Spacer />
     </>
   );
