@@ -14,8 +14,8 @@ const BannerContact = () => {
                   <Card.Text>
                     <BannerContactItem
                       img="assets/img/envelop.png"
-                      link="mailto:efelergrub@gmail.com"
-                      icerik="efelergrubdemircelik@gmail.com"
+                      link="mailto:efedemircelik@gmail.com"
+                      icerik="efedemircelik@gmail.com"
                     />
                   </Card.Text>
                 </Card.Body>

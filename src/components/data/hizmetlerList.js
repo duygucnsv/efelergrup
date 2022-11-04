@@ -43,4 +43,10 @@ export const hizmetlerList = [
     açıklama:
       "Sundurma binaların ve mekanların kapı önlerine yapılan ve hava şartlarından kaynaklı meydana gelen zararların ortadan kaldırılması amaçlanan sistemlerdir. Sundurmalar binaların yanı sıra araçların bulunduğu otopark gibi alanlarda da kullanılabilir.",
   },
+  {
+    id: 1,
+    başlık: "GEZER VİNÇ",
+    açıklama:
+      "Gezer vinç,kirişler üzerine yerleştirilmiş raylar boyunca hareket kabiliyeti olan köprü ve arabalı kaldırma sistemleridir. Kaldırma kapasitelerine göre tek köprülü ve çift köprülü olarak dizayn edilebilirler",
+  },
 ];
