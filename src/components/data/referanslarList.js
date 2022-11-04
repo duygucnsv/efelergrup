@@ -161,149 +161,22 @@ export const referanslarList = [
   },
   {
     id: 33,
-    ad: "Çenesizler Toprak Sanayi",
-    konum: "Tokat",
+    ad: "İntergaluana",
+    konum: "İstanbul",
   },
   {
     id: 34,
-    ad: "Ömür Kiremit",
-    konum: "Çorum",
+    ad: "Şentürk Demir",
+    konum: "İstanbul",
   },
   {
     id: 35,
-    ad: "Özkent Kiremit",
-    konum: "Çorum",
+    ad: "And Çorap",
+    konum: "İstanbul",
   },
   {
     id: 36,
-    ad: "Yaylaoğlu Kiremit",
-    konum: "Sinop",
-  },
-  {
-    id: 37,
-    ad: "Emek Kiremit",
-    konum: "Sinop",
-  },
-  {
-    id: 38,
-    ad: "Gramer Mermer",
-    konum: "Amasya",
-  },
-  {
-    id: 39,
-    ad: "Aktuğ Sanayi",
-    konum: "Sakarya",
-  },
-  {
-    id: 40,
-    ad: "Doğan Tuğla",
-    konum: "Tokat",
-  },
-  {
-    id: 41,
-    ad: "Özata Tuğla",
-    konum: "Tokat",
-  },
-  {
-    id: 42,
-    ad: "Çelebioğlu Demir Çelik",
-    konum: "Çorum",
-  },
-  {
-    id: 43,
-    ad: "Karslıoğlu Tarım",
-    konum: "Çorum",
-  },
-  {
-    id: 44,
-    ad: "Tiryaki Yağ",
-    konum: "Çorum",
-  },
-  {
-    id: 45,
-    ad: "Güngör Maden",
-    konum: "Niğde",
-  },
-  {
-    id: 46,
-    ad: "Avrasya Kiremit",
-    konum: "Çorum",
-  },
-  {
-    id: 47,
-    ad: "Ece Kiremit",
-    konum: "Çorum",
-  },
-  {
-    id: 48,
-    ad: "Yüksel Kiremit",
-    konum: "Çorum",
-  },
-  {
-    id: 49,
-    ad: "İpek Tuğla",
-    konum: "Afyon",
-  },
-  {
-    id: 50,
-    ad: "Mensace Mermer",
-    konum: "Tokat",
-  },
-  {
-    id: 51,
-    ad: "Orkisan Mermer",
-    konum: "Çorum",
-  },
-  {
-    id: 52,
-    ad: "Hilal Blok",
-    konum: "Çorum",
-  },
-
-  {
-    id: 54,
-    ad: "Sütçüoğlu Tuğla",
-    konum: "Sinop",
-  },
-  {
-    id: 55,
-    ad: "Ortaklar Kalıp",
-    konum: "Manisa",
-  },
-  {
-    id: 56,
-    ad: "Öncü Tuğla",
-    konum: "Sinop",
-  },
-  {
-    id: 57,
-    ad: "Özer Kiremit",
-    konum: "Kütahya",
-  },
-  {
-    id: 58,
-    ad: "Özücan Tavukçuluk",
-    konum: "Çorum",
-  },
-
-  {
-    id: 59,
-    ad: "Poraş Porselen",
-    konum: "Çorum",
-  },
-  {
-    id: 60,
-    ad: "Genç Tuğla",
-    konum: "Bingöl",
-  },
-  {
-    id: 61,
-    ad: "Taş Değirmen",
-    konum: "Çorum",
-  },
-  {
-    id: 62,
-    ad: "İntergalvano",
+    ad: "Yıldız Plastik",
     konum: "İstanbul",
   },
 ];

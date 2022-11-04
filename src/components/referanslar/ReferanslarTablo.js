@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Table, Row, Col} from "react-bootstrap";
+import { Container, Table, Row, Col } from "react-bootstrap";
 import { referanslarList } from "../data/referanslarList";
-
 
 const ReferanslarTablo = () => {
   return (
