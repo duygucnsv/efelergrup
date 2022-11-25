@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Navigate } from "react-router-dom";
 import SectionTitle from "../common/SectionTitle";
 
 const Project = () => {
@@ -21,11 +22,7 @@ const Project = () => {
                 <h2>Sistemleri</h2>
               </div>
 
-              <a
-                className="btn btn-outline-primary btn-lg"
-                href="/CelikCati"
-                // onClick={() => navigate("/CelikCati")}
-              >
+              <a className="btn btn-outline-primary btn-lg" href="/galeri">
                 Detaylar
               </a>
             </div>
@@ -35,7 +32,7 @@ const Project = () => {
             <div href="#" className="project-link">
               <img
                 src="assets/img/resimler/5.jpeg"
-                alt="Teleferik Sistemleri"
+                alt="Çelik Konstrüksiyon"
                 className="img-fluid"
               />
               <div className="title">
@@ -43,7 +40,7 @@ const Project = () => {
                 <h2>Konstrüksiyon</h2>
               </div>
 
-              <a className="btn btn-outline-primary btn-lg" href="/çelikKons">
+              <a className="btn btn-outline-primary btn-lg" href="/galeri">
                 Detaylar
               </a>
             </div>

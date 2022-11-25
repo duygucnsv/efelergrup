@@ -8,6 +8,6 @@ export const partnerList = [
   { title: "Göktürkler Çelik", image: "göktürkler.webp" },
   { title: "Mert Çelik", image: "logo.jpg" },
   { title: "Uygur Teker", image: "uygur.png" },
-  { title: "Sütçüoğlu&Güneş Tuğla Fabrikaları", image: "sutcuoglu.png" },
+  // { title: "Sütçüoğlu&Güneş Tuğla Fabrikaları", image: "sutcuoglu.png" },
   { title: "Yükselen Çelik", image: "yükselen.png" },
 ];

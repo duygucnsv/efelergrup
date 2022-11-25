@@ -18,9 +18,9 @@ const Partners = () => {
           mutluluk duyuyoruz.
         </Col>
       </Row>
-      <hr/>
-      <br/>
-      <Row className="mt-2 referanslar" >
+      <hr />
+      <br />
+      <Row className="m-4 referanslar">
         {partnerList.map((partner, index) => (
           <Col key={index}>
             <Image
@@ -28,7 +28,7 @@ const Partners = () => {
                 require(`../../assets/img/partners/${partner.image}`).default
               }
               alt={partner.title}
-              className="img-fluid"
+              // className="img-fluid"
             />
           </Col>
         ))}

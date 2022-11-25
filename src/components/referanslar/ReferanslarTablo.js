@@ -10,9 +10,13 @@ const ReferanslarTablo = () => {
           <tbody>
             <thead>
               <tr>
-                <th>#</th>
-                <th>FİRMA ADI</th>
-                <th>KONUMU</th>
+                <Col>
+                  <th>#</th>
+                  <th>FİRMA ADI</th>
+                </Col>
+                <Col>
+                  <th>KONUMU</th>
+                </Col>
               </tr>
             </thead>
           </tbody>
@@ -24,8 +28,13 @@ const ReferanslarTablo = () => {
             <Table striped bordered hover key={referans.id}>
               <tbody>
                 <tr>
-                  <td>{referans.ad}</td>
-                  <td>{referans.konum}</td>
+                  <Col>
+                    <td>{referans.ad}</td>
+                  </Col>
+
+                  <Col>
+                    <td>{referans.konum}</td>
+                  </Col>
                 </tr>
               </tbody>
             </Table>
