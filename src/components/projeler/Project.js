@@ -8,9 +8,9 @@ const Project = () => {
     <Container>
       <SectionTitle title="Faaliyet Alanlarımız" />
 
-      <div className="project container-fluid p-0 m-5">
+      <div className="project container-fluid" xs={12} md={4} lg={6}>
         <Row>
-          <Col xs={12} md={4} lg={6}>
+          <Col>
             <div className="project-link">
               <img
                 src="assets/img/resimler/2.jpeg"
@@ -28,7 +28,7 @@ const Project = () => {
             </div>
           </Col>
 
-          <Col xs={12} md={4} lg={6}>
+          <Col>
             <div href="#" className="project-link">
               <img
                 src="assets/img/resimler/5.jpeg"

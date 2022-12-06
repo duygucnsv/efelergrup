@@ -5,7 +5,7 @@ import { partnerList } from "../data/partnerList";
 
 const Partners = () => {
   return (
-    <Container>
+    <Container xs={12} md={6} lg={3}>
       <SectionTitle title="Referanslarımız" />
       <Row>
         <Col>
@@ -24,6 +24,7 @@ const Partners = () => {
         {partnerList.map((partner, index) => (
           <Col key={index}>
             <Image
+              className="ref img-fluid p-1 m-1"
               src={
                 require(`../../assets/img/partners/${partner.image}`).default
               }

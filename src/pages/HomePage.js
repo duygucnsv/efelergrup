@@ -8,6 +8,7 @@ import SliderCarousel from "../components/home/SliderCarousel";
 import BannerContact from "../components/home/BannerContact";
 import Project from "../components/projeler/Project";
 import Partners from "../components/referanslar/Partners";
+import { Container } from "react-bootstrap";
 
 const HomePage = () => {
   return (

@@ -15,19 +15,19 @@ import Teklif from "../teklif/Teklif";
 import { Link } from "react-router-dom";
 
 const TopBar = () => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
   return (
-    <div className="topbar">
-      <Container>
+    <>
+      <Container className="topbar">
         <Row>
           <Col xs={7}>
             <FiPhoneCall size={16} />
             <span className="d-none d-md-inline">
               BİZİ ARAYIN <br></br>
-              <a href="tel:05326955452">+90 532 695 54 52</a>{" "}
+              <a href="tel:05326955452">+90 532 695 54 52</a>
             </span>
           </Col>
 
@@ -49,8 +49,8 @@ const TopBar = () => {
                 <Button
                   size="sm"
                   variant="primary"
-                  onClick={handleShow}
-                  data-toggle="modal"
+                  //onClick={handleShow}
+                  //data-toggle="modal"
                 >
                   <MdOutlineLocalOffer />
                   TEKLİF ALIN
@@ -59,7 +59,7 @@ const TopBar = () => {
             </ul>
           </Col>
         </Row>
-        <Modal className="modal p-3" show={show} onHide={handleClose}>
+        {/* <Modal className="modal p-3" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>TEKLİF FORMU</Modal.Title>
           </Modal.Header>
@@ -71,9 +71,9 @@ const TopBar = () => {
               GÖNDER
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
       </Container>
-    </div>
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import TopBar from "./components/common/TopBar";
 import Footer from "./components/common/Footer";
 import CustomRoutes from "./router/CustomRoutes";
 import LoadingPage from "./pages/LoadingPage";
+import { ToastContainer } from "react-bootstrap";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ const App = () => {
       <MenuBar />
       <CustomRoutes />
       <Footer />
+      <ToastContainer />
     </BrowserRouter>
   );
 };
