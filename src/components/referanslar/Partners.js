@@ -20,9 +20,9 @@ const Partners = () => {
       </Row>
       <hr />
       <br />
-      <Row className="m-4 referanslar">
+      <Row className="m-2 referanslar">
         {partnerList.map((partner, index) => (
-          <Col key={index}>
+          <Col key={index} className="ref">
             <Image
               className="ref img-fluid p-1 m-1"
               src={

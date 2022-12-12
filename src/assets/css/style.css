@@ -13,8 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin:0;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
  
   background-color: #f0f1f2;;
 }
@@ -137,39 +137,43 @@ body {
 /************ MENUBAR ************/
 .menubar{
     width: 100%;
-    height: 100px;
+    height: 10vh;
+    display: flex; 
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact {
-    text-align: left;   
-  }
-
- 
+    justify-content: space-between;
+    padding-bottom: 2rem;      
+} 
 
 .menubar .logo{
-  width: 370px;
-  height: 250px;
-  justify-content: space-between;
-  align-items: center;
+  width: 55%;
+  height: auto;
+  margin-top: 1rem;
 } 
 
 .menubar .navbar-nav {
-  display: inline-block;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+
+  /* align-items: center; */
+
+
 
 }
 
-@media (max-width: 450px) { /*media sorgusu ile hangi ekranda nasıl gözükeceğini ayarlıyoruz*/
+@media (max-width: 1013px) { /*media sorgusu ile hangi ekranda nasıl gözükeceğini ayarlıyoruz*/
   
   .menubar .navbar-nav {
-    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 946px){
+   .menubar .navbar-nav {
+    background-color: white ;   
+    justify-content: space-between;  
+    
   }
 }
 
@@ -239,15 +243,14 @@ img-fluid rounded-start{
 }
 
 /****project****/
-.project {
-  margin: 3rem;
-  /* height: 90vh;
+/* .project {
+  height: 90vh;
   top: 12vh;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 10px; */
+  gap: 10px; 
   
-}
+} */
 
 .project .project-link {
   display: block;
@@ -453,9 +456,19 @@ img-fluid rounded-start{
 
 /************ FOOTER ************/
 footer {
+  width: 100%;
   background-color: var(--color1);
   padding: 2rem;
   text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  footer ul li a{
+    display: flex;
+  justify-content: center;
+  }
 }
 
 footer ul {
@@ -484,24 +497,35 @@ footer ul li:first-child {
 }
 
 
-/******* GALERİ **********/
+/******* HİZMETLERİMİZ **********/
 
-.galeri .img{
-  float: left;
+.hizmetler{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 /********REFERANS*****/
 .referanslar {  
+  display: flex;
+  flex-direction: row;
   background-color: rgb(158, 153, 153);
+  height: 350px;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .ref{
-   padding: 1rem;
-  width: 45%;
-  height: 10vh;
-  @media screen(max-width:991px) {
-    width: 350px !important;;
-   height: 150px;
+@media (max-width: 1013px) {
+.ref{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 9vh;
+  height: 100px;
+  padding: 0.5rem;
+  margin: 1% 5%;
+}
+}
 
-  }
-} */
+

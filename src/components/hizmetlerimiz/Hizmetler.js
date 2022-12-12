@@ -15,7 +15,7 @@ const Hizmetler = () => {
           <br></br>
           </Col>
           </Row>
-      <Row className='d-inline-block'>
+      <Row className='hizmetler'>
         {hizmetlerList.map((hizmetler) => (
           <Col>
             <Accordion defaultActiveKey="0">

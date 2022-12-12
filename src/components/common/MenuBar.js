@@ -14,90 +14,52 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/img/efeler-grup.png";
 
 const MenuBar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
-    <>
-      <Navbar expand="md" className="menubar">
+    <div>
+      <Navbar bg="white" expand="lg" className="menubar">
         <Container>
-          <Col className="contact">
-            {/* <Navbar.Brand as={Link} to="/">
-              <Image className="logo img-fluid" src={logo} />
-            </Navbar.Brand> */}
-            <Nav className="justify-content-start" defaultActiveKey="/" as="ul">
-              <Nav.Item as="li">
-                <Nav.Link
-                  onClick={() => {
-                    navigate("/");
-                  }}
-                >
-                  <img
-                    src={logo}
-                    className="img-fluid shadow-2-strong"
-                    alt=""
-                  />
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
+          <Col md={4} lg={4}>
+            <Navbar.Brand as={Link} to="/">
+              <Image className="logo" src={logo} />
+            </Navbar.Brand>
           </Col>
-          <Col>
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav
-                className="ms-auto justify-content-end"
-                defaultActiveKey="/"
-                as="ul"
-              >
-                <Nav.Item as="li">
-                  <Nav.Link
-                    onClick={() => {
-                      navigate("/");
-                    }}
-                  >
-                    <RiHome4Line /> ANASAYFA
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item as="li">
-                  <Nav.Link as={Link} to="/about">
-                    <MdOutlineCorporateFare /> HAKKIMIZDA
-                  </Nav.Link>
-                </Nav.Item>
+          <Col className="sticky-top" lg={4}>
+            <Navbar.Toggle aria-controls="navbarScroll" />
 
-                <Nav.Item as="li">
-                  <Nav.Link as={Link} to="/hizmetlerimiz">
-                    <RiInformationLine /> HİZMETLERİMİZ
-                  </Nav.Link>
-                </Nav.Item>
+            <Navbar.Collapse id="navbarScroll">
+              <Nav>
+                <Nav.Link as={Link} to="/">
+                  <RiHome4Line /> ANASAYFA
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                  <MdOutlineCorporateFare /> HAKKIMIZDA
+                </Nav.Link>
 
-                <Nav.Item as="li">
-                  <Nav.Link as={Link} to="/referanslar" referanslar>
-                    <VscReferences /> REFERANSLAR
-                  </Nav.Link>
-                </Nav.Item>
+                <Nav.Link as={Link} to="/hizmetlerimiz">
+                  <RiInformationLine /> HİZMETLERİMİZ
+                </Nav.Link>
 
-                <Nav.Item as="li">
-                  {" "}
-                  <Nav.Link as={Link} to="/projeler">
-                    <AiOutlineProject /> PROJELER
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item as="li">
-                  <Nav.Link as={Link} to="/galeri">
-                    <GrGallery /> GALERİ
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item as="li">
-                  <Nav.Link as={Link} to="/contact">
-                    <RiHeadphoneLine /> İLETİŞİM
-                  </Nav.Link>
-                </Nav.Item>
+                <Nav.Link as={Link} to="/referanslar" referanslar>
+                  <VscReferences /> REFERANSLAR
+                </Nav.Link>
+
+                <Nav.Link as={Link} to="/projeler">
+                  <AiOutlineProject /> PROJELER
+                </Nav.Link>
+                <Nav.Link as={Link} to="/galeri">
+                  <GrGallery /> GALERİ
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contact">
+                  <RiHeadphoneLine /> İLETİŞİM
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Col>
         </Container>
       </Navbar>
-
-      <div style={{ height: 5 }}></div>
-    </>
+    </div>
   );
 };
 

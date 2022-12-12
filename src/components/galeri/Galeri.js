@@ -4,37 +4,25 @@ import { Row, Container, Col, Card } from "react-bootstrap";
 
 const Galeri = () => {
   return (
-    <Container className="resimler">
-      <div className="container-fluid p-0 m-5">
-        <Row>
-          {galeriList.map((product) => (
-            <Col xs={12} md={4} lg={3} key={product.id}>
-              <Row style={{ margin: "1rem" }}>
-                <Card style={{ maxWidth: "18rem", maxHeight: "28rem" }}>
-                  <div
-                    style={{
-                      maxWidth: "18rem",
-                      maxHeight: "18rem",
-                      textAlign: "center",
-                    }}
-                  >
-                    <Card.Img
-                      style={{
-                        width: "18rem",
-                        height: "18rem",
-                        textAlign: "center",
-                        objectFit: "cover",
-                      }}
-                      variant="top"
-                      src={product.image}
-                    />
-                  </div>
-                </Card>
-              </Row>
-            </Col>
-          ))}
-        </Row>
-      </div>
+    <Container className="resimler container-fluid">
+      <Row className="m-auto">
+        {galeriList.map((product) => (
+          <Col xs={12} md={4} lg={3} key={product.id}>
+            <Card style={{ maxWidth: "18rem", maxHeight: "28rem" }}>
+              <Card.Img
+                style={{
+                  width: "18rem",
+                  height: "18rem",
+                  textAlign: "center",
+                  objectFit: "cover",
+                }}
+                variant="top"
+                src={product.image}
+              />
+            </Card>
+          </Col>
+        ))}
+      </Row>
     </Container>
   );
 };
