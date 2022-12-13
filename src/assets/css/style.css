@@ -154,12 +154,7 @@ body {
 .menubar .navbar-nav {
   display: flex;
   justify-content: center;
-  /* flex-direction: row; */
-
-  /* align-items: center; */
-
-
-
+  align-items: center;
 }
 
 @media (max-width: 1013px) { /*media sorgusu ile hangi ekranda nasıl gözükeceğini ayarlıyoruz*/
@@ -169,8 +164,9 @@ body {
   }
 }
 
-@media (max-width: 946px){
+@media (max-width: 768px){
    .menubar .navbar-nav {
+    width: 100%;
     background-color: white ;   
     justify-content: space-between;  
     
@@ -243,14 +239,7 @@ img-fluid rounded-start{
 }
 
 /****project****/
-/* .project {
-  height: 90vh;
-  top: 12vh;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px; 
-  
-} */
+
 
 .project .project-link {
   display: block;
@@ -463,11 +452,11 @@ footer {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
  
-  footer ul li a{
+  footer ul li a{   
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
 }
 

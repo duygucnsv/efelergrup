@@ -20,12 +20,12 @@ const MenuBar = () => {
     <div>
       <Navbar bg="white" expand="lg" className="menubar">
         <Container>
-          <Col md={4} lg={4}>
+          <Col xs={3} md={4} lg={6}>
             <Navbar.Brand as={Link} to="/">
               <Image className="logo" src={logo} />
             </Navbar.Brand>
           </Col>
-          <Col className="sticky-top" lg={4}>
+          <Col className="sticky-top" xs={9} md={8} lg={6}>
             <Navbar.Toggle aria-controls="navbarScroll" />
 
             <Navbar.Collapse id="navbarScroll">
