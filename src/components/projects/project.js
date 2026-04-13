@@ -1,0 +1,53 @@
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import SectionTitle from "../common/section-title";
+
+const Project = () => {
+  return (
+    <Container>
+      <SectionTitle title="Faaliyet Alanlarımız" />
+
+      <div className="project container-fluid" xs={12} md={4} lg={6}>
+        <Row className="g-6 m-auto">
+          <Col>
+            <div className="project-link">
+              <img
+                src="/assets/img/resimler/2.jpeg"
+                alt="Esenyurt çelik çatı sistemleri — Efeler Grup demir çelik"
+                className="img-fluid"
+              />
+              <div className="title">
+                <h4>Çelik Çatı</h4>
+                <h2>Sistemleri</h2>
+              </div>
+
+              <a className="btn btn-outline-primary btn-lg" href="/galeri">
+                Detaylar
+              </a>
+            </div>
+          </Col>
+
+          <Col>
+            <div className="project-link">
+              <img
+                src="/assets/img/resimler/5.jpeg"
+                alt="Esenyurt çelik konstrüksiyon — demir çelik yapı"
+                className="img-fluid"
+              />
+              <div className="title">
+                <h4>Çelik</h4>
+                <h2>Konstrüksiyon</h2>
+              </div>
+
+              <a className="btn btn-outline-primary btn-lg" href="/galeri">
+                Detaylar
+              </a>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  );
+};
+
+export default Project;
